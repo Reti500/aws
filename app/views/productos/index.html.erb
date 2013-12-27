@@ -16,6 +16,7 @@
       <tr>
         <td><%= producto.nombre %></td>
         <td><%= producto.precio %></td>
+        <td><%= image_tag ( "http://pruebanews.s3.amazonaws.com/"+producto.imagen.path) %></td>
         <td><%= link_to 'Show', producto %></td>
         <td><%= link_to 'Edit', edit_producto_path(producto) %></td>
         <td><%= link_to 'Destroy', producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
