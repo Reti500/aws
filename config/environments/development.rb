@@ -26,4 +26,13 @@ Aws::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => 'pruebanews',
+    :access_key_id => 'AKIAI37NH6YABDJANX6A',
+    :secret_access_key => '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'
+  }
+}
 end
