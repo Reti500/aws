@@ -1,4 +1,5 @@
 Aws::Application.routes.draw do
+  get "users/index"
   resources :productos
 
   root 'productos#index'
